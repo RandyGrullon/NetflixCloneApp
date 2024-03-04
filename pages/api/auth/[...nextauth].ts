@@ -6,8 +6,6 @@ import { PrismaAdapter } from '@next-auth/prisma-adapter';
 import { compare } from 'bcrypt';
 import prismadb from '@/libs/prismadb';
 
-export const maxDuration = 300
-
 export const authOptions: AuthOptions = {
   providers: [
     GithubProvider({
